@@ -1,11 +1,9 @@
 package com.example.lotto.analyzer.externalApi.Entity;
 
+import com.example.lotto.analyzer.externalApi.GameType;
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.MappedSuperclass;
+import jakarta.persistence.*;
 import lombok.*;
 
 import java.util.Set;
@@ -23,7 +21,6 @@ import java.util.Set;
         @JsonSubTypes.Type(value = EuroJackpotDrawResult.class, name = "EuroJackpot"),
         @JsonSubTypes.Type(value = EkstraPensjaDrawResult.class, name = "EkstraPensja")
 })
-@ToString
 public abstract class DrawResultGame extends DrawResult {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

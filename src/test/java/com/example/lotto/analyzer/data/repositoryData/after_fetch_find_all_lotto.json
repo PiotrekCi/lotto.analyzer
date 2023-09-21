@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "drawDate": "2023-08-24T22:00:00Z",
+    "drawSystemId": 6926,
+    "gameType": "Lotto",
+    "resultsJson": [
+      16,
+      49,
+      2,
+      36,
+      39,
+      44
+    ],
+    "specialResults": []
+  },
+  {
+    "id": 2,
+    "drawDate": "2023-08-26T22:00:00Z",
+    "drawSystemId": 6927,
+    "gameType": "Lotto",
+    "resultsJson": [
+      20,
+      22,
+      25,
+      26,
+      30,
+      47
+    ],
+    "specialResults": []
+  },
+  {
+    "id": 3,
+    "drawDate": "2023-08-29T22:00:00Z",
+    "drawSystemId": 6928,
+    "gameType": "Lotto",
+    "resultsJson": [
+      16,
+      32,
+      19,
+      5,
+      21,
+      22
+    ],
+    "specialResults": []
+  },
+  {
+    "id": 4,
+    "drawDate": "2023-08-31T22:00:00Z",
+    "drawSystemId": 6929,
+    "gameType": "Lotto",
+    "resultsJson": [
+      2,
+      6,
+      7,
+      23,
+      27,
+      47
+    ],
+    "specialResults": []
+  },
+  {
+    "id": 5,
+    "drawDate": "2023-09-02T22:00:00Z",
+    "drawSystemId": 6930,
+    "gameType": "Lotto",
+    "resultsJson": [
+      1,
+      36,
+      5,
+      26,
+      11,
+      44
+    ],
+    "specialResults": []
+  },
+  {
+    "id": 6,
+    "drawDate": "2023-09-05T22:00:00Z",
+    "drawSystemId": 6931,
+    "gameType": "Lotto",
+    "resultsJson": [
+      2,
+      7,
+      24,
+      9,
+      27,
+      30
+    ],
+    "specialResults": []
+  },
+  {
+    "id": 7,
+    "drawDate": "2023-09-07T22:00:00Z",
+    "drawSystemId": 6932,
+    "gameType": "Lotto",
+    "resultsJson": [
+      32,
+      17,
+      36,
+      39,
+      30,
+      31
+    ],
+    "specialResults": []
+  },
+  {
+    "id": 8,
+    "drawDate": "2023-09-09T22:00:00Z",
+    "drawSystemId": 6933,
+    "gameType": "Lotto",
+    "resultsJson": [
+      17,
+      35,
+      20,
+      36,
+      4,
+      38
+    ],
+    "specialResults": []
+  },
+  {
+    "id": 9,
+    "drawDate": "2023-09-12T22:00:00Z",
+    "drawSystemId": 6934,
+    "gameType": "Lotto",
+    "resultsJson": [
+      48,
+      8,
+      25,
+      41,
+      43,
+      46
+    ],
+    "specialResults": []
+  },
+  {
+    "id": 10,
+    "drawDate": "2023-09-14T22:00:00Z",
+    "drawSystemId": 6935,
+    "gameType": "Lotto",
+    "resultsJson": [
+      20,
+      7,
+      25,
+      11,
+      46,
+      30
+    ],
+    "specialResults": []
+  }
+]

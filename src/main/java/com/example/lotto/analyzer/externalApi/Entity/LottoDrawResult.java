@@ -6,4 +6,5 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name = "lotto_draw_result")
 public class LottoDrawResult extends DrawResultGame {
+
 }

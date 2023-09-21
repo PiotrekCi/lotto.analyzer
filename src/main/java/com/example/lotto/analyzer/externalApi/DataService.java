@@ -2,14 +2,18 @@ package com.example.lotto.analyzer.externalApi;
 
 import com.example.lotto.analyzer.externalApi.Entity.*;
 import com.example.lotto.analyzer.externalApi.Repository.DrawResultGameRepository;
+import com.example.lotto.analyzer.externalApi.Repository.EuroJackpotDrawResultRepository;
 import com.example.lotto.analyzer.externalApi.Repository.LottoDrawResultRepository;
+import com.example.lotto.analyzer.externalApi.Repository.LottoPlusDrawResultRepository;
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import java.time.DayOfWeek;
-import java.time.LocalDateTime;
+import java.time.OffsetDateTime;
 import java.time.temporal.ChronoUnit;
 import java.util.Collections;
 import java.util.List;
@@ -20,8 +24,9 @@ import java.util.stream.Collectors;
 @Slf4j
 public class DataService {
     private final RestTemplate restTemplate;
-    private final DrawResultGameRepository resultGameRepository;
-    private final LottoDrawResultRepository lottoDrawResultRepository;
+    private final DrawResultGameRepository drawResultGameRepository;
+    private final LottoPlusDrawResultRepository lottoPlusDrawResultGameRepository;
+    private final EuroJackpotDrawResultRepository euroJackpotDrawResultRepository;
 
     private final String url = "https://www.lotto.pl/api/lotteries/draw-results/by-gametype?";
 
@@ -35,7 +40,7 @@ public class DataService {
 
         List<DrawResultGame> resultsList = getAllResults(drawData, gameType);
         log.info("FETCHED " + resultsList.size() + " RECORDS FOR " + gameType);
-        resultGameRepository.saveAll(resultsList);
+        drawResultGameRepository.saveAll(resultsList);
     }
 
     public void fetchMissingGamesByType(GameType gameType) {
@@ -55,10 +60,18 @@ public class DataService {
         List<DrawResultGame> result = getAllResults(drawData, gameType);
 
         if (!result.isEmpty()) {
-            resultGameRepository.saveAll(result);
+            drawResultGameRepository.saveAll(result);
             log.info("FETCHED " + result.size() + " RECORDS FOR " + gameType);
         }
     }
+
+    public List<? extends DrawResultGame> getAllResults(GameType gameType) {
+        return getRepositoryBasedOnGameType(gameType).findAll(Sort.by(Sort.Direction.DESC, "drawDate"));
+    }
+
+//    public List<? extends DrawResultGame> getLatestAmountOfResults(GameType gameType, Long numberOfResults) {
+//        return getRepositoryBasedOnGameType(gameType).
+//    }
 
     /* ToDo
         Some GameType includes other, like Lotto + LottoPlus, EkstraPensja + EkstraPremia
@@ -76,12 +89,18 @@ public class DataService {
     }
 
     private long calculateMissingDrawsCount(GameType gameType) {
-        // ToDo generic repository to fetch latest drawDate depending on provided gameType
-        LocalDateTime sinceDate = lottoDrawResultRepository.findLatestDrawDate();
-        long daysBetween = ChronoUnit.DAYS.between(sinceDate, LocalDateTime.now());
+        OffsetDateTime sinceDate;
+
+        sinceDate = getRepositoryBasedOnGameType(gameType).findLatestDrawDate().orElse(null);
+
+        if (sinceDate == null) {
+            return 10000000L;
+        }
+
+        long daysBetween = ChronoUnit.DAYS.between(sinceDate, OffsetDateTime.now());
         long missedDaysCount = 0;
         for (long i = 1; i <= daysBetween; i++) {
-            LocalDateTime currentDate = sinceDate.plusDays(i);
+            OffsetDateTime currentDate = sinceDate.plusDays(i);
             if (getDaysConfigurationForGameType(gameType).contains(currentDate.getDayOfWeek())) {
                 missedDaysCount++;
             }
@@ -96,6 +115,15 @@ public class DataService {
             case Lotto, LottoPlus -> List.of(DayOfWeek.TUESDAY, DayOfWeek.THURSDAY, DayOfWeek.SATURDAY);
             case EuroJackpot -> List.of(DayOfWeek.TUESDAY, DayOfWeek.FRIDAY);
             default -> List.of();
+        };
+    }
+
+    private DrawResultGameRepository<?> getRepositoryBasedOnGameType(GameType gameType) {
+        return switch (gameType) {
+            // case Lotto -> lottoDrawResultGameRepository;
+            case LottoPlus -> lottoPlusDrawResultGameRepository;
+            case EuroJackpot -> euroJackpotDrawResultRepository;
+            default -> drawResultGameRepository;
         };
     }
 }

@@ -4,7 +4,7 @@ import com.example.lotto.analyzer.externalApi.GameType;
 import jakarta.persistence.*;
 import lombok.*;
 
-import java.time.LocalDateTime;
+import java.time.OffsetDateTime;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -12,10 +12,7 @@ import java.time.LocalDateTime;
 @Setter
 @MappedSuperclass
 public abstract class DrawResult {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    private LocalDateTime drawDate;
+    private OffsetDateTime drawDate;
     private Long drawSystemId;
     @Enumerated(EnumType.STRING)
     private GameType gameType;
