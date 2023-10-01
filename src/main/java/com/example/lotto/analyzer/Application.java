@@ -6,7 +6,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
-@ComponentScan(basePackages = "com.example.lotto.analyzer.externalApi")
+@ComponentScan(basePackages = "com.example.lotto.analyzer")
 @EnableScheduling
 public class Application {
 

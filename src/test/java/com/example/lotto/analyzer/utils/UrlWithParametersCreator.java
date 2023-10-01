@@ -1,6 +1,6 @@
 package com.example.lotto.analyzer.utils;
 
-import com.example.lotto.analyzer.externalApi.GameType;
+import com.example.lotto.analyzer.Entity.GameType;
 import lombok.experimental.UtilityClass;
 
 @UtilityClass
