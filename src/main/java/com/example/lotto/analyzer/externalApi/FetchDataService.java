@@ -5,7 +5,10 @@ import com.example.lotto.analyzer.Entity.DrawResultGame;
 import com.example.lotto.analyzer.Entity.GameType;
 import com.example.lotto.analyzer.externalApi.Base.DrawResultGameExtendedRepository;
 import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
@@ -18,9 +21,11 @@ import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 @Service
-@AllArgsConstructor
+@RequiredArgsConstructor
 @Slf4j
 public class FetchDataService {
+    @Value("${fetch.api.delay}")
+    private long fetchApiDelay;
     private final RestTemplate restTemplate;
     private final DrawResultGameExtendedRepository drawResultGameExtendedRepository;
 
@@ -29,10 +34,11 @@ public class FetchDataService {
     public void fetchAllGamesByType(GameType gameType) {
         // AVOID REQUEST SPAM WHICH BLOCKS RESOURCES
         try {
-            Thread.sleep(TimeUnit.SECONDS.toMillis(60));
+            Thread.sleep(TimeUnit.SECONDS.toMillis(fetchApiDelay));
         } catch (InterruptedException e) {
             log.warn(e.getMessage());
         }
+
         DrawData drawData = restTemplate.getForObject(url + "game=" + gameType + "&index=1&size=1000000&sort=drawDate&order=DESC", DrawData.class);
 
         if (drawData == null || drawData.getItems() == null) {
@@ -95,7 +101,7 @@ public class FetchDataService {
         long missedDaysCount = 0;
         for (long i = 1; i <= daysBetween; i++) {
             OffsetDateTime currentDate = sinceDate.plusDays(i);
-            if (getDaysConfigurationForGameType(gameType).size() == 0 || getDaysConfigurationForGameType(gameType).contains(currentDate.getDayOfWeek())) {
+            if (getDaysConfigurationForGameType(gameType).isEmpty() || getDaysConfigurationForGameType(gameType).contains(currentDate.getDayOfWeek())) {
                 missedDaysCount++;
             }
         }
@@ -104,7 +110,6 @@ public class FetchDataService {
     }
 
     private List<DayOfWeek> getDaysConfigurationForGameType(GameType gameType) {
-        // ToDo extend this list by missing games
         return switch (gameType) {
             case Lotto, LottoPlus -> List.of(DayOfWeek.TUESDAY, DayOfWeek.THURSDAY, DayOfWeek.SATURDAY);
             case EkstraPensja, EkstraPremia -> List.of();

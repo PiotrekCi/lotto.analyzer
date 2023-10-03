@@ -1,0 +1,152 @@
+[
+  {
+    "drawDate": "2023-09-09T22:00:00Z",
+    "drawSystemId": 6933,
+    "gameType": "LottoPlus",
+    "id": 1,
+    "resultsJson": [
+      1,
+      37,
+      25,
+      27,
+      11,
+      15
+    ],
+    "specialResults": []
+  },
+  {
+    "drawDate": "2023-09-12T22:00:00Z",
+    "drawSystemId": 6934,
+    "gameType": "LottoPlus",
+    "id": 2,
+    "resultsJson": [
+      48,
+      18,
+      21,
+      39,
+      28,
+      45
+    ],
+    "specialResults": []
+  },
+  {
+    "drawDate": "2023-09-14T22:00:00Z",
+    "drawSystemId": 6935,
+    "gameType": "LottoPlus",
+    "id": 3,
+    "resultsJson": [
+      33,
+      5,
+      41,
+      12,
+      45,
+      46
+    ],
+    "specialResults": []
+  },
+  {
+    "drawDate": "2023-09-16T22:00:00Z",
+    "drawSystemId": 6936,
+    "gameType": "LottoPlus",
+    "id": 4,
+    "resultsJson": [
+      36,
+      20,
+      39,
+      27,
+      44,
+      45
+    ],
+    "specialResults": []
+  },
+  {
+    "drawDate": "2023-09-19T22:00:00Z",
+    "drawSystemId": 6937,
+    "gameType": "LottoPlus",
+    "id": 5,
+    "resultsJson": [
+      49,
+      36,
+      39,
+      41,
+      45,
+      47
+    ],
+    "specialResults": []
+  },
+  {
+    "drawDate": "2023-09-21T22:00:00Z",
+    "drawSystemId": 6938,
+    "gameType": "LottoPlus",
+    "id": 6,
+    "resultsJson": [
+      19,
+      6,
+      27,
+      45,
+      13,
+      14
+    ],
+    "specialResults": []
+  },
+  {
+    "drawDate": "2023-09-23T22:00:00Z",
+    "drawSystemId": 6939,
+    "gameType": "LottoPlus",
+    "id": 7,
+    "resultsJson": [
+      21,
+      44,
+      29,
+      46,
+      47,
+      15
+    ],
+    "specialResults": []
+  },
+  {
+    "drawDate": "2023-09-26T22:00:00Z",
+    "drawSystemId": 6940,
+    "gameType": "LottoPlus",
+    "id": 8,
+    "resultsJson": [
+      32,
+      17,
+      2,
+      37,
+      26,
+      46
+    ],
+    "specialResults": []
+  },
+  {
+    "drawDate": "2023-09-28T22:00:00Z",
+    "drawSystemId": 6941,
+    "gameType": "LottoPlus",
+    "id": 9,
+    "resultsJson": [
+      32,
+      5,
+      22,
+      38,
+      10,
+      26
+    ],
+    "specialResults": []
+  },
+  {
+    "drawDate": "2023-09-30T22:00:00Z",
+    "drawSystemId": 6942,
+    "gameType": "LottoPlus",
+    "id": 10,
+    "resultsJson": [
+      18,
+      23,
+      25,
+      42,
+      28,
+      45
+    ],
+    "specialResults": []
+  }
+]

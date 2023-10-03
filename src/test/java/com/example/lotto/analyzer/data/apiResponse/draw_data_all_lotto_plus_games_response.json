@@ -1,0 +1,387 @@
+{
+  "totalRows": 0,
+  "items": [
+    {
+      "drawSystemId": 6942,
+      "drawDate": "2023-09-30T22:00:00Z",
+      "gameType": "LottoPlus",
+      "multiplierValue": 0,
+      "results": [
+        {
+          "drawDate": "2023-09-30T22:00:00Z",
+          "drawSystemId": 6942,
+          "gameType": "LottoPlus",
+          "resultsJson": [
+            28,
+            25,
+            42,
+            45,
+            18,
+            23
+          ],
+          "specialResults": []
+        },
+        {
+          "drawDate": "2023-09-30T22:00:00Z",
+          "drawSystemId": 6942,
+          "gameType": "Lotto",
+          "resultsJson": [
+            33,
+            27,
+            28,
+            25,
+            32,
+            48
+          ],
+          "specialResults": []
+        }
+      ],
+      "showSpecialResults": true,
+      "isNewEuroJackpotDraw": false
+    },
+    {
+      "drawSystemId": 6941,
+      "drawDate": "2023-09-28T22:00:00Z",
+      "gameType": "LottoPlus",
+      "multiplierValue": 0,
+      "results": [
+        {
+          "drawDate": "2023-09-28T22:00:00Z",
+          "drawSystemId": 6941,
+          "gameType": "LottoPlus",
+          "resultsJson": [
+            22,
+            32,
+            10,
+            26,
+            5,
+            38
+          ],
+          "specialResults": []
+        },
+        {
+          "drawDate": "2023-09-28T22:00:00Z",
+          "drawSystemId": 6941,
+          "gameType": "Lotto",
+          "resultsJson": [
+            34,
+            5,
+            1,
+            44,
+            23,
+            9
+          ],
+          "specialResults": []
+        }
+      ],
+      "showSpecialResults": true,
+      "isNewEuroJackpotDraw": false
+    },
+    {
+      "drawSystemId": 6940,
+      "drawDate": "2023-09-26T22:00:00Z",
+      "gameType": "LottoPlus",
+      "multiplierValue": 0,
+      "results": [
+        {
+          "drawDate": "2023-09-26T22:00:00Z",
+          "drawSystemId": 6940,
+          "gameType": "LottoPlus",
+          "resultsJson": [
+            2,
+            17,
+            26,
+            46,
+            37,
+            32
+          ],
+          "specialResults": []
+        },
+        {
+          "drawDate": "2023-09-26T22:00:00Z",
+          "drawSystemId": 6940,
+          "gameType": "Lotto",
+          "resultsJson": [
+            29,
+            5,
+            20,
+            7,
+            33,
+            46
+          ],
+          "specialResults": []
+        }
+      ],
+      "showSpecialResults": true,
+      "isNewEuroJackpotDraw": false
+    },
+    {
+      "drawSystemId": 6939,
+      "drawDate": "2023-09-23T22:00:00Z",
+      "gameType": "LottoPlus",
+      "multiplierValue": 0,
+      "results": [
+        {
+          "drawDate": "2023-09-23T22:00:00Z",
+          "drawSystemId": 6939,
+          "gameType": "LottoPlus",
+          "resultsJson": [
+            29,
+            21,
+            47,
+            44,
+            15,
+            46
+          ],
+          "specialResults": []
+        },
+        {
+          "drawDate": "2023-09-23T22:00:00Z",
+          "drawSystemId": 6939,
+          "gameType": "Lotto",
+          "resultsJson": [
+            9,
+            46,
+            32,
+            21,
+            39,
+            7
+          ],
+          "specialResults": []
+        }
+      ],
+      "showSpecialResults": true,
+      "isNewEuroJackpotDraw": false
+    },
+    {
+      "drawSystemId": 6938,
+      "drawDate": "2023-09-21T22:00:00Z",
+      "gameType": "LottoPlus",
+      "multiplierValue": 0,
+      "results": [
+        {
+          "drawDate": "2023-09-21T22:00:00Z",
+          "drawSystemId": 6938,
+          "gameType": "LottoPlus",
+          "resultsJson": [
+            45,
+            27,
+            6,
+            13,
+            14,
+            19
+          ],
+          "specialResults": []
+        },
+        {
+          "drawDate": "2023-09-21T22:00:00Z",
+          "drawSystemId": 6938,
+          "gameType": "Lotto",
+          "resultsJson": [
+            36,
+            14,
+            13,
+            37,
+            49,
+            33
+          ],
+          "specialResults": []
+        }
+      ],
+      "showSpecialResults": true,
+      "isNewEuroJackpotDraw": false
+    },
+    {
+      "drawSystemId": 6937,
+      "drawDate": "2023-09-19T22:00:00Z",
+      "gameType": "LottoPlus",
+      "multiplierValue": 0,
+      "results": [
+        {
+          "drawDate": "2023-09-19T22:00:00Z",
+          "drawSystemId": 6937,
+          "gameType": "LottoPlus",
+          "resultsJson": [
+            45,
+            41,
+            47,
+            49,
+            36,
+            39
+          ],
+          "specialResults": []
+        },
+        {
+          "drawDate": "2023-09-19T22:00:00Z",
+          "drawSystemId": 6937,
+          "gameType": "Lotto",
+          "resultsJson": [
+            12,
+            33,
+            2,
+            36,
+            6,
+            47
+          ],
+          "specialResults": []
+        }
+      ],
+      "showSpecialResults": true,
+      "isNewEuroJackpotDraw": false
+    },
+    {
+      "drawSystemId": 6936,
+      "drawDate": "2023-09-16T22:00:00Z",
+      "gameType": "LottoPlus",
+      "multiplierValue": 0,
+      "results": [
+        {
+          "drawDate": "2023-09-16T22:00:00Z",
+          "drawSystemId": 6936,
+          "gameType": "LottoPlus",
+          "resultsJson": [
+            44,
+            27,
+            39,
+            45,
+            36,
+            20
+          ],
+          "specialResults": []
+        },
+        {
+          "drawDate": "2023-09-16T22:00:00Z",
+          "drawSystemId": 6936,
+          "gameType": "Lotto",
+          "resultsJson": [
+            31,
+            42,
+            33,
+            34,
+            14,
+            41
+          ],
+          "specialResults": []
+        }
+      ],
+      "showSpecialResults": true,
+      "isNewEuroJackpotDraw": false
+    },
+    {
+      "drawSystemId": 6935,
+      "drawDate": "2023-09-14T22:00:00Z",
+      "gameType": "LottoPlus",
+      "multiplierValue": 0,
+      "results": [
+        {
+          "drawDate": "2023-09-14T22:00:00Z",
+          "drawSystemId": 6935,
+          "gameType": "LottoPlus",
+          "resultsJson": [
+            46,
+            45,
+            12,
+            41,
+            5,
+            33
+          ],
+          "specialResults": []
+        },
+        {
+          "drawDate": "2023-09-14T22:00:00Z",
+          "drawSystemId": 6935,
+          "gameType": "Lotto",
+          "resultsJson": [
+            46,
+            11,
+            25,
+            20,
+            30,
+            7
+          ],
+          "specialResults": []
+        }
+      ],
+      "showSpecialResults": true,
+      "isNewEuroJackpotDraw": false
+    },
+    {
+      "drawSystemId": 6934,
+      "drawDate": "2023-09-12T22:00:00Z",
+      "gameType": "LottoPlus",
+      "multiplierValue": 0,
+      "results": [
+        {
+          "drawDate": "2023-09-12T22:00:00Z",
+          "drawSystemId": 6934,
+          "gameType": "LottoPlus",
+          "resultsJson": [
+            21,
+            18,
+            45,
+            39,
+            48,
+            28
+          ],
+          "specialResults": []
+        },
+        {
+          "drawDate": "2023-09-12T22:00:00Z",
+          "drawSystemId": 6934,
+          "gameType": "Lotto",
+          "resultsJson": [
+            46,
+            25,
+            48,
+            41,
+            8,
+            43
+          ],
+          "specialResults": []
+        }
+      ],
+      "showSpecialResults": true,
+      "isNewEuroJackpotDraw": false
+    },
+    {
+      "drawSystemId": 6933,
+      "drawDate": "2023-09-09T22:00:00Z",
+      "gameType": "LottoPlus",
+      "multiplierValue": 0,
+      "results": [
+        {
+          "drawDate": "2023-09-09T22:00:00Z",
+          "drawSystemId": 6933,
+          "gameType": "LottoPlus",
+          "resultsJson": [
+            25,
+            27,
+            15,
+            1,
+            11,
+            37
+          ],
+          "specialResults": []
+        },
+        {
+          "drawDate": "2023-09-09T22:00:00Z",
+          "drawSystemId": 6933,
+          "gameType": "Lotto",
+          "resultsJson": [
+            38,
+            20,
+            35,
+            36,
+            17,
+            4
+          ],
+          "specialResults": []
+        }
+      ],
+      "showSpecialResults": true,
+      "isNewEuroJackpotDraw": false
+    }
+  ],
+  "meta": {},
+  "code": 200
+}

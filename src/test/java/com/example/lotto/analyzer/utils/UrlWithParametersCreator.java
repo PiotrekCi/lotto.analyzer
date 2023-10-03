@@ -16,6 +16,6 @@ public class UrlWithParametersCreator {
     }
 
     public String getApiUrlWithParameters(final GameType game) {
-        return apiUrl + "game=" + game + "&index=1&size=10000000&sort=drawDate&order=DESC";
+        return apiUrl + "game=" + game + "&index=1&size=1000000&sort=drawDate&order=DESC";
     }
 }

@@ -1,0 +1,162 @@
+[
+  {
+    "drawDate": "2023-09-23T22:00:00Z",
+    "drawSystemId": 2695,
+    "gameType": "EkstraPensja",
+    "id": 1,
+    "resultsJson": [
+      32,
+      18,
+      2,
+      10,
+      28
+    ],
+    "specialResults": [
+      4
+    ]
+  },
+  {
+    "drawDate": "2023-09-24T22:00:00Z",
+    "drawSystemId": 2696,
+    "gameType": "EkstraPensja",
+    "id": 2,
+    "resultsJson": [
+      32,
+      16,
+      21,
+      24,
+      12
+    ],
+    "specialResults": [
+      1
+    ]
+  },
+  {
+    "drawDate": "2023-09-25T22:00:00Z",
+    "drawSystemId": 2697,
+    "gameType": "EkstraPensja",
+    "id": 3,
+    "resultsJson": [
+      32,
+      33,
+      26,
+      11,
+      15
+    ],
+    "specialResults": [
+      2
+    ]
+  },
+  {
+    "drawDate": "2023-09-26T22:00:00Z",
+    "drawSystemId": 2698,
+    "gameType": "EkstraPensja",
+    "id": 4,
+    "resultsJson": [
+      32,
+      34,
+      2,
+      7,
+      11
+    ],
+    "specialResults": [
+      4
+    ]
+  },
+  {
+    "drawDate": "2023-09-27T22:00:00Z",
+    "drawSystemId": 2699,
+    "gameType": "EkstraPensja",
+    "id": 5,
+    "resultsJson": [
+      16,
+      34,
+      19,
+      5,
+      7
+    ],
+    "specialResults": [
+      2
+    ]
+  },
+  {
+    "drawDate": "2023-09-28T22:00:00Z",
+    "drawSystemId": 2700,
+    "gameType": "EkstraPensja",
+    "id": 6,
+    "resultsJson": [
+      17,
+      2,
+      35,
+      11,
+      12
+    ],
+    "specialResults": [
+      2
+    ]
+  },
+  {
+    "drawDate": "2023-09-29T22:00:00Z",
+    "drawSystemId": 2701,
+    "gameType": "EkstraPensja",
+    "id": 7,
+    "resultsJson": [
+      35,
+      9,
+      13,
+      29,
+      31
+    ],
+    "specialResults": [
+      1
+    ]
+  },
+  {
+    "drawDate": "2023-09-30T22:00:00Z",
+    "drawSystemId": 2702,
+    "gameType": "EkstraPensja",
+    "id": 8,
+    "resultsJson": [
+      32,
+      2,
+      21,
+      23,
+      29
+    ],
+    "specialResults": [
+      2
+    ]
+  },
+  {
+    "drawDate": "2023-10-01T22:00:00Z",
+    "drawSystemId": 2703,
+    "gameType": "EkstraPensja",
+    "id": 9,
+    "resultsJson": [
+      18,
+      5,
+      13,
+      30,
+      31
+    ],
+    "specialResults": [
+      1
+    ]
+  },
+  {
+    "drawDate": "2023-10-02T22:00:00Z",
+    "drawSystemId": 2704,
+    "gameType": "EkstraPensja",
+    "id": 10,
+    "resultsJson": [
+      34,
+      18,
+      5,
+      6,
+      28
+    ],
+    "specialResults": [
+      4
+    ]
+  }
+]
