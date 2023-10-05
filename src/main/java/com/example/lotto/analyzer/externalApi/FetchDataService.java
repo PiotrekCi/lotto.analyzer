@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+import java.time.Clock;
 import java.time.DayOfWeek;
 import java.time.OffsetDateTime;
 import java.time.temporal.ChronoUnit;
@@ -28,6 +29,7 @@ public class FetchDataService {
     private long fetchApiDelay;
     private final RestTemplate restTemplate;
     private final DrawResultGameExtendedRepository drawResultGameExtendedRepository;
+    private final Clock clock;
 
     private final String url = "https://www.lotto.pl/api/lotteries/draw-results/by-gametype?";
 
@@ -66,7 +68,6 @@ public class FetchDataService {
         }
 
         List<DrawResultGame> result = getAllResults(drawData, gameType);
-
         if (!result.isEmpty()) {
             drawResultGameExtendedRepository.saveAll(result);
             log.info("FETCHED " + result.size() + " RECORDS FOR " + gameType);
@@ -97,7 +98,7 @@ public class FetchDataService {
             return 10000000L;
         }
 
-        long daysBetween = ChronoUnit.DAYS.between(sinceDate, OffsetDateTime.now());
+        long daysBetween = ChronoUnit.DAYS.between(sinceDate, OffsetDateTime.now(clock));
         long missedDaysCount = 0;
         for (long i = 1; i <= daysBetween; i++) {
             OffsetDateTime currentDate = sinceDate.plusDays(i);

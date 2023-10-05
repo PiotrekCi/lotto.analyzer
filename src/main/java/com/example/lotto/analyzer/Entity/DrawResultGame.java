@@ -19,7 +19,8 @@ import java.util.Set;
         @JsonSubTypes.Type(value = LottoPlusDrawResult.class, name = "LottoPlus"),
         @JsonSubTypes.Type(value = SuperSzansaDrawResult.class, name = "SuperSzansa"),
         @JsonSubTypes.Type(value = EuroJackpotDrawResult.class, name = "EuroJackpot"),
-        @JsonSubTypes.Type(value = EkstraPensjaDrawResult.class, name = "EkstraPensja")
+        @JsonSubTypes.Type(value = EkstraPensjaDrawResult.class, name = "EkstraPensja"),
+        @JsonSubTypes.Type(value = EkstraPremiaDrawResult.class, name = "EkstraPremia")
 })
 public abstract class DrawResultGame extends DrawResult {
     @Id
@@ -52,6 +53,7 @@ public abstract class DrawResultGame extends DrawResult {
             case EuroJackpot -> EuroJackpotDrawResult.class;
             case SuperSzansa -> SuperSzansaDrawResult.class;
             case EkstraPensja -> EkstraPensjaDrawResult.class;
+            case EkstraPremia -> EkstraPremiaDrawResult.class;
             default -> DrawResultGame.class;
         };
     }
